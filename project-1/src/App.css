@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 78%;
+    margin: auto;
+}
+nav img{
+    margin-top: 5px;
+    width: 50px;
+}
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+nav button{
+    margin-top: 10px;
+    border: none;
+    background-color: rgb(255, 127, 127);
+    width: 80px;
+    height: 30px;
+}
+
+.photo img{
+    margin-top: 150px;
+    width: 600px;
+}
+
+.hero-title h1{
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 100px;
+}
+
+.hero-sec{
+    display: flex;
+    justify-content: space-between;
+    max-width: 78%;
+    margin: auto;
+}
+
+.para{
+    margin-top: -50px;
+}
+
+.buttons-hero{
+    display: flex;
+    gap: 20px;
+}
+
+.buttons-hero .b1{
+    background-color: lightcoral;
+    border: none;
+    width: 100px;
+    height: 40px;
+}
+
+.buttons-hero .b2{
+    background-color: transparent;
+    /* border: none; */
+    width: 100px;
+    height: 40px;
+}
+
+.online-images img{
+    margin-top: -5px;
+    width: 40px;
+}
+
+@media screen and (max-width: 700px) {
+    .hero-sec {
+     flex-direction: column;
+    }
+    body{
+        text-align: center;
+    }
+    .photo img{
+        margin-top: 100px;
+        width: 370px;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    .buttons-hero{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-title h1{
+        font-size: 80px;
+    font-weight: 700;
+    line-height: 80px;
+    }
+  }
