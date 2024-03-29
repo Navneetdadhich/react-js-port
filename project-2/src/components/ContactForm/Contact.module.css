@@ -1,0 +1,85 @@
+
+.sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec img{
+    width: 500px;
+}
+
+.call{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact_form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form_control{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+}
+
+.form_control label{
+    position: absolute;
+    top: -12px;
+    background-color: white;
+    left: 12px;
+}
+.form_control input{
+    height: 40px;
+    padding: 0 10px;
+}
+
+.mail_control{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+}
+
+.mail_control label{
+    position: absolute;
+    top: -12px;
+    background-color: white;
+    left: 12px;
+}
+.mail_control input{
+    height: 40px;
+    padding: 0 10px;
+}
+
+
+.text_control{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+}
+
+.text_control label{
+    position: absolute;
+    top: -12px;
+    background-color: white;
+    left: 12px;
+}
+.text_control input{
+    height: 90px;
+    padding: 0 10px;
+}
+
+.form_cont{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}

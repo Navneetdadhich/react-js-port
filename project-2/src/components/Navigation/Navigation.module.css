@@ -1,0 +1,18 @@
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    
+    height: 72px;
+}
+.navigation img{
+    width: 70px;
+}
+.navigation ul{
+    display: flex;
+    gap: 20px;
+}
+
+.navigation ul li {
+    list-style: none;
+   
+}
