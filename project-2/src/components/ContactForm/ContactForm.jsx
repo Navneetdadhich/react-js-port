@@ -4,7 +4,12 @@ import styles from './Contact.module.css'
 import { MdMessage } from "react-icons/md";
 import { IoCall } from "react-icons/io5";
 import { HiMail } from "react-icons/hi";
+import { useState } from 'react';
 const ContactForm = () => {
+
+  const onSubmit = (event) => {
+    console.log(event);
+  }
   return (
     <section className={styles.sec}>
         <div className={styles.contact_form}>
@@ -14,7 +19,8 @@ const ContactForm = () => {
             </div>
             <Button isOutline={true} text = "E-Mail" icon = {< HiMail fontSize='20px' />} />
 
-            <form className={styles.form_cont}>
+            <form onSubmit = { onSubmit }
+            className={styles.form_cont}>
                 <div className={styles.form_control}>
                 <label htmlFor="name">Name</label>
                 <input type="text" name="name" />
@@ -28,11 +34,12 @@ const ContactForm = () => {
                 <div className={styles.text_control}>
                 <label htmlFor="text">Text</label>
                 <input type="text" name="text" />
+             
                 </div>
-              
+                <Button  text = "Submit"  />
+                {/* <div>{ name + " " + email + " " + text} </div> */}
             </form>
-            
-            <Button isOutline={false} text = "Submit"  />
+      
         </div>
         <img src="/images/contact.png" alt="" />
     </section>
