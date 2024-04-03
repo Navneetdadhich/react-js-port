@@ -11,9 +11,11 @@ const GlobalStyle = createGlobalStyle`
  box-sizing: border-box;
 }
 
-body{
+html, body{
   background-color: #323334;
   color: white;
+  width: 1280px;
+  margin: auto;
 }
 `;
 
