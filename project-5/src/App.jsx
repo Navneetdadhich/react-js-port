@@ -45,6 +45,7 @@ function App() {
           placeholder='Password'
           className='outline-none w-full mx-2 p-3 rounded-lg'
           readOnly
+          ref={passwordRef}
           />
           <button
           onClick={copyPassword}
